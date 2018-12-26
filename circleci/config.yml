@@ -1,0 +1,9 @@
+version: 2
+jobs:
+	build:
+		woring_directory: ~/tmp
+		docker:
+			image: circleci/java
+		steps:
+			- checkout
+			- run: mvn test
